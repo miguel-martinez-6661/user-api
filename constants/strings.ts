@@ -1,6 +1,9 @@
 const strings = {
   serverPort: 'Server is running in ',
-  databaseConnectionSuccess: 'Connection to Database Sucessfull',
+  database: {
+    connectionSuccess: 'Connection to Database Sucessfull',
+    credentialMissed: 'Database Credential Missed',
+  },
 };
 
 export default strings;

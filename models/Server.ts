@@ -29,7 +29,7 @@ class Server {
   async dbConnection() {
     try {
       await db.authenticate();
-      console.log(strings.databaseConnectionSuccess);
+      console.log(strings.database.connectionSuccess);
     } catch (error) {
       throw new Error(`${error}`);
     }
