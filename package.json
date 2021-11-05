@@ -4,7 +4,7 @@
   "description": "User CRUD API",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "start": "tsc",
     "dev": "nodemon --watch '**/*.ts' --exec 'ts-node' app.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -21,6 +21,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
+    "sequelize-cli": "^6.3.0",
     "ts-node": "^10.4.0",
     "tslint": "^6.1.3",
     "typescript": "^4.4.4"

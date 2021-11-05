@@ -1,9 +1,9 @@
 import { DataTypes } from 'sequelize';
-import db from '../database/Connection';
+import database from '../database/Connection';
 
 const TABLE_NAME = 'user';
 
-const User = db.define(TABLE_NAME, {
+const User = database().define(TABLE_NAME, {
   name: {
     type: DataTypes.STRING,
   },

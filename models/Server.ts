@@ -2,8 +2,7 @@ import express, { Application } from 'express';
 import strings from '../constants/strings';
 import router from '../routes/user';
 import cors from 'cors';
-import db from '../database/Connection';
-
+import database from '../database/Connection';
 class Server {
   private app: Application;
   private port: string;
@@ -28,7 +27,7 @@ class Server {
 
   async dbConnection() {
     try {
-      await db.authenticate();
+      await database().authenticate();
       console.log(strings.database.connectionSuccess);
     } catch (error) {
       throw new Error(`${error}`);
