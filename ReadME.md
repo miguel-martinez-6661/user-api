@@ -4,7 +4,7 @@ This is a NodeJS - Express - Typescript based API which gives to you the posibil
 
 ## Setup
 
-### 0. First your should run:
+### 0. First you should run:
 
 > npm install
 
@@ -17,18 +17,18 @@ Note: This command will transpile the Typescript code into a Javascript code. No
 ### 2. Create the .env file
 
 Create .env file and put it on the root folder. With the next data:
-
-> DB_USER=<YourUser>
-> DB_PASS=<YourPass>
-> DB_NAME=users
-> DB_HOST=<YourHost>
-> PORT=<YourPort>
-
+```
+ DB_USER=<YourUser>
+ DB_PASS=<YourPass>
+ DB_NAME=users
+ DB_HOST=<YourHost>
+ PORT=<YourPort>
+```
 ### 3. Now, make sure you have installed:
-
-> Nodemon (global install recommended: npm i -g nodemon)
-> Typescript (global install recommended: npm i -g typescript)
-
+```
+ Nodemon (global install recommended: npm i -g nodemon)
+ Typescript (global install recommended: npm i -g typescript)
+```
 ### 4. Migrate Database
 
 To migrate the database use:
