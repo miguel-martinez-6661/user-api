@@ -29,9 +29,10 @@ Create .env file and put it on the root folder. With the next data:
  Nodemon (global install recommended: npm i -g nodemon)
  Typescript (global install recommended: npm i -g typescript)
 ```
-### 4. Migrate Database
+### 4. Migrate Database (Optional)
+Edit the `config/config.json` and replace it with your database credentials.
 
-To migrate the database use:
+Now, to migrate the database use:
 
 > npx sequelize-cli db:migrate
 
