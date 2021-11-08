@@ -1,8 +1,12 @@
 import dotenv from 'dotenv';
+import { isEnvironmentLoaded } from './helpers/Environment';
 import Server from './models/Server';
 
 dotenv.config();
 
-const server = new Server();
+const isEnvReady = isEnvironmentLoaded();
 
-server.listen();
+if (isEnvReady) {
+  const server = new Server();
+  server.listen();
+}

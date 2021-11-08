@@ -49,7 +49,11 @@ const updateUser = async (req: Request, res: Response) => {
   } = req;
 
   try {
-    const userU = await User.update([id], body);
+    const userU = await User.update(body, {
+      where: {
+        id,
+      },
+    });
     res.status(HTTP_CODES.CREATED).json({
       userU,
     });
@@ -76,6 +80,9 @@ const deleteUser = async (req: Request, res: Response) => {
       });
     } else {
       user.destroy();
+      res.status(HTTP_CODES.SUCCESS).json({
+        message: HTTP_MSG[HTTP_CODES.SUCCESS],
+      });
     }
   } catch (error) {
     res.status(HTTP_CODES.INTERNAL_ERROR).json({

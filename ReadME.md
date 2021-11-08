@@ -28,6 +28,7 @@ Create .env file and put it on the root folder. With the next data:
 
 > Nodemon (global install recommended: npm i -g nodemon)
 > Typescript (global install recommended: npm i -g typescript)
+> Sequelize (npm install --save sequelize)
 
 ### 4. Migrate Database
 
